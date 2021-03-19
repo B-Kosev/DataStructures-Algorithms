@@ -1,0 +1,3 @@
+﻿  BST.cpp
+D:\SI - 2 KURS\СДА\HW      7\1\BST\BST.cpp(152,1): warning C4804: '>=': unsafe use of type 'bool' in operation
+  BST.vcxproj -> D:\SI - 2 KURS\СДА\HW      7\1\BST\Debug\BST.exe

@@ -1,0 +1,2 @@
+D:\SI - 2 KURS\СДА\HW     6\1\Delete k-th element from Tree\Debug\Delete k-th element from Tree.exe
+D:\SI - 2 KURS\СДА\HW     6\1\Delete k-th element from Tree\Debug\Delete k-th element from Tree.pdb

@@ -1,0 +1,2 @@
+D:\SI - 2 KURS\СДА\HW            13\1\Count Hamiltonina Paths\Debug\Count Hamiltonina Paths.exe
+D:\SI - 2 KURS\СДА\HW            13\1\Count Hamiltonina Paths\Debug\Count Hamiltonina Paths.pdb

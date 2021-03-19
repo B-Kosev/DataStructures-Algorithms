@@ -1,0 +1,4 @@
+﻿  Minimum XOR.cpp
+D:\SI - 2 KURS\СДА\HW      7\3\Minimum XOR\Minimum XOR.cpp(176,1): warning C4804: '>=': unsafe use of type 'bool' in operation
+D:\SI - 2 KURS\СДА\HW      7\3\Minimum XOR\Minimum XOR.cpp(227,44): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  Minimum XOR.vcxproj -> D:\SI - 2 KURS\СДА\HW      7\3\Minimum XOR\Debug\Minimum XOR.exe

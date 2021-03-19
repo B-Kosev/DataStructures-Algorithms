@@ -1,0 +1,5 @@
+﻿  Zoro's mask.cpp
+D:\SI - 2 KURS\СДА\HW      7\2\Zoro's mask\Zoro's mask.cpp(167,1): warning C4804: '>=': unsafe use of type 'bool' in operation
+D:\SI - 2 KURS\СДА\HW      7\2\Zoro's mask\Zoro's mask.cpp(217,23): warning C4018: '<': signed/unsigned mismatch
+D:\SI - 2 KURS\СДА\HW      7\2\Zoro's mask\Zoro's mask.cpp(218,44): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  Zoro's mask.vcxproj -> D:\SI - 2 KURS\СДА\HW      7\2\Zoro's mask\Debug\Zoro's mask.exe

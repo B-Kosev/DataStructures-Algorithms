@@ -1,0 +1,218 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+//vector<vector<string>> matrix;
+char matrix[1001][1001];
+int rowN[] = { -1,0,0,1 }; //get coordinates for neighboors
+int colN[] = { 0,-1,1,0 };
+bool visited[1001][1001] = { false };
+
+struct Point
+{
+    int x, y;
+};
+
+struct Node
+{
+    char data;
+    Point pt;
+    int dist;
+    Node* next, *prev;
+
+    Node(char data, Point pt = { 0,0 }, int dist = 0, Node* next = nullptr, Node* prev = nullptr)
+    {
+        this->data = data;
+        this->next = next;
+        this->prev = prev;
+        this->pt = pt;
+        this->dist = dist;
+    }
+};
+
+class Queue
+{
+private:
+    Node* head, * tail;
+    int length;
+    int minEl;
+public:
+    Queue()
+    {
+        head = nullptr;
+        tail = nullptr;
+        length = 0;
+        minEl = -1;
+    }
+
+    Node* getHead() { return head; }
+    Node* getTail() { return tail; }
+    int size() { return length; }
+    void setHead(Node* head) { this->head = head; }
+    void setTail(Node* tail) { this->tail = tail; }
+
+    void enqueue(char data)
+    {
+        if (head == nullptr)
+        {
+            head = new Node(data);
+            tail = head;
+            length++;
+        }
+        else
+        {
+            Node* el = new Node(data);
+            tail->next = el;
+            el->prev = tail;
+            tail = tail->next;
+            length++;
+        }
+    }
+
+    void enqueue(Node* node)
+    {
+        if (head == nullptr)
+        {
+            head = node;
+            tail = head;
+            length++;
+        }
+        else
+        {
+            tail->next = node;
+            node->prev = tail;
+            tail = tail->next;
+            length++;
+        }
+    }
+
+    void dequeue()
+    {
+        if (head == nullptr) return;
+        if (length == 1)
+        {
+            //delete head;
+            head = nullptr;
+            tail = nullptr;
+            length = 0;
+            return;
+        }
+        //Node* temp = head;
+        head = head->next;
+        head->prev = nullptr;
+        //delete temp;
+        length--;
+    }
+
+    Node* at(int ind)
+    {
+        if (ind == 0) return head;
+        int count = 0;
+        Node* res = head;
+        while (count != ind)
+        {
+            res = res->next;
+            count++;
+        }
+        return res;
+    }
+
+    void print()
+    {
+        Node* i = head;
+        while (i)
+        {
+            cout << i->data << ' ';
+            i = i->next;
+        }
+    }
+};
+
+Point start, finish;
+
+bool isValid(int row, int col, int n, int m)
+{
+    return (row >= 0) && (col >= 0) && (row < n) && (col < m);
+}
+
+int search(int n,int m)
+{
+    if (!matrix[start.x][start.y] && !matrix[finish.x][finish.y]) //if there is no valid start/finish element
+        return -1;
+
+    visited[start.x][start.y] = true; //start cell visited
+
+    Queue q;
+    Node s(matrix[start.x][start.y], start, 0);
+
+    q.enqueue(&s);
+
+    while (q.size() > 0)
+    {
+        Node current = *q.getHead();
+        Point pt = current.pt;
+
+        if (pt.x == finish.x && pt.y == finish.y) //if destination
+            return current.dist;
+
+        q.dequeue();//remove head and add all adj cells
+        for (int i = 0; i < 4; i++)
+        {
+            int r = pt.x + rowN[i];
+            int c = pt.y + colN[i];
+
+            if (isValid(r,c,n,m) && matrix[r][c] && !visited[r][c] && matrix[r][c]!='#')
+            {
+                visited[r][c] = true;
+
+                Node adjCell(matrix[r][c], { r,c }, current.dist + 1);
+                q.enqueue(&adjCell);
+            }
+        }
+
+    }
+    return -1;
+
+}
+
+
+int main() {
+
+    int n, m;
+    cin >> n >> m;
+    char el;
+
+    //fill matrix
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++){
+            cin >> el;
+            matrix[i][j] = el;
+            if (el == 'S')
+            {
+                start.x = i;
+                start.y = j;
+            }
+            if (el == 'F')
+            {
+                finish.x = i;
+                finish.y = j;
+            }
+        }
+    }
+
+    //print matrix
+    /*for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cout << matrix[i][j];
+        }
+        cout << endl;
+    }*/
+
+    int dist = search(n, m);
+    cout << dist;
+   
+    return 0;
+}

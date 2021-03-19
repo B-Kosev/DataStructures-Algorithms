@@ -1,0 +1,4 @@
+﻿  Genno injenerstvo.cpp
+D:\SI - 2 KURS\СДА\HW  3\3\Genno injenerstvo\Genno injenerstvo.cpp(24,24): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+D:\SI - 2 KURS\СДА\HW  3\3\Genno injenerstvo\Genno injenerstvo.cpp(18): warning C4715: 'calculateFoodAt': not all control paths return a value
+  Genno injenerstvo.vcxproj -> D:\SI - 2 KURS\СДА\HW  3\3\Genno injenerstvo\Debug\Genno injenerstvo.exe

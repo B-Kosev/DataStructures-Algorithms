@@ -1,0 +1,5 @@
+﻿  Cheating.cpp
+D:\SI - 2 KURS\СДА\HW         10\2\Cheating\Cheating.cpp(22,27): warning C4018: '<': signed/unsigned mismatch
+D:\SI - 2 KURS\СДА\HW         10\2\Cheating\Cheating.cpp(65,27): warning C4018: '<': signed/unsigned mismatch
+D:\SI - 2 KURS\СДА\HW         10\2\Cheating\Cheating.cpp(44): warning C4715: 'shortestPathDijkstra': not all control paths return a value
+  Cheating.vcxproj -> D:\SI - 2 KURS\СДА\HW         10\2\Cheating\Debug\Cheating.exe

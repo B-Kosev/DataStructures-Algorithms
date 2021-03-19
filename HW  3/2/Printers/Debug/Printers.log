@@ -1,0 +1,4 @@
+﻿  Printers.cpp
+D:\SI - 2 KURS\СДА\HW  3\2\Printers\Printers.cpp(20,34): warning C4244: 'argument': conversion from 'unsigned __int64' to 'const unsigned int', possible loss of data
+D:\SI - 2 KURS\СДА\HW  3\2\Printers\Printers.cpp(68,39): warning C4244: 'argument': conversion from 'unsigned __int64' to 'int', possible loss of data
+  Printers.vcxproj -> D:\SI - 2 KURS\СДА\HW  3\2\Printers\Debug\Printers.exe

@@ -1,0 +1,9 @@
+﻿  Tunnel Maps.cpp
+D:\SI - 2 KURS\СДА\HW          11\5\Tunnel Maps\Tunnel Maps.cpp(17,13): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+D:\SI - 2 KURS\СДА\HW          11\5\Tunnel Maps\Tunnel Maps.cpp(30,26): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+D:\SI - 2 KURS\СДА\HW          11\5\Tunnel Maps\Tunnel Maps.cpp(36,29): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+D:\SI - 2 KURS\СДА\HW          11\5\Tunnel Maps\Tunnel Maps.cpp(42,13): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+D:\SI - 2 KURS\СДА\HW          11\5\Tunnel Maps\Tunnel Maps.cpp(56,27): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+D:\SI - 2 KURS\СДА\HW          11\5\Tunnel Maps\Tunnel Maps.cpp(61,21): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+D:\SI - 2 KURS\СДА\HW          11\5\Tunnel Maps\Tunnel Maps.cpp(62,29): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+  Tunnel Maps.vcxproj -> D:\SI - 2 KURS\СДА\HW          11\5\Tunnel Maps\Debug\Tunnel Maps.exe

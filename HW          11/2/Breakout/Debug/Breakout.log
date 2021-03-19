@@ -1,0 +1,17 @@
+﻿  Breakout.cpp
+D:\SI - 2 KURS\СДА\HW          11\2\Breakout\Breakout.cpp(149,15): warning C4244: 'initializing': conversion from 'const _Ty1' to 'int', possible loss of data
+          with
+          [
+              _Ty1=const __int64
+          ]
+D:\SI - 2 KURS\СДА\HW          11\2\Breakout\Breakout.cpp(154,30): warning C4244: '=': conversion from '_Ty2' to 'int', possible loss of data
+          with
+          [
+              _Ty2=__int64
+          ]
+D:\SI - 2 KURS\СДА\HW          11\2\Breakout\Breakout.cpp(162,15): warning C4244: 'initializing': conversion from 'const _Ty1' to 'int', possible loss of data
+          with
+          [
+              _Ty1=const __int64
+          ]
+  Breakout.vcxproj -> D:\SI - 2 KURS\СДА\HW          11\2\Breakout\Debug\Breakout.exe

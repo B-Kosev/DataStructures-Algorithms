@@ -1,0 +1,28 @@
+﻿  Shortest paths.cpp
+D:\SI - 2 KURS\СДА\HW          11\1\Shortest paths\Shortest paths.cpp(29,51): warning C4244: 'argument': conversion from 'const _Ty2' to 'const int', possible loss of data
+          with
+          [
+              _Ty2=__int64
+          ]
+D:\SI - 2 KURS\СДА\HW          11\1\Shortest paths\Shortest paths.cpp(31,35): warning C4244: 'argument': conversion from 'const _Ty2' to 'const int', possible loss of data
+          with
+          [
+              _Ty2=__int64
+          ]
+D:\SI - 2 KURS\СДА\HW          11\1\Shortest paths\Shortest paths.cpp(32,68): warning C4244: 'argument': conversion from 'const _Ty2' to 'const int', possible loss of data
+          with
+          [
+              _Ty2=__int64
+          ]
+D:\SI - 2 KURS\СДА\HW          11\1\Shortest paths\Shortest paths.cpp(35,43): warning C4244: 'argument': conversion from 'const _Ty2' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty2=__int64
+          ]
+D:\SI - 2 KURS\СДА\HW          11\1\Shortest paths\Shortest paths.cpp(39,25): warning C4018: '<': signed/unsigned mismatch
+D:\SI - 2 KURS\СДА\HW          11\1\Shortest paths\Shortest paths.cpp(43,42): warning C4244: 'argument': conversion from 'const _Ty2' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty2=__int64
+          ]
+  Shortest paths.vcxproj -> D:\SI - 2 KURS\СДА\HW          11\1\Shortest paths\Debug\Shortest paths.exe
